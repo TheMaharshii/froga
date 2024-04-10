@@ -1,0 +1,10 @@
+.images .box1{
+    position: absolute;
+    top: 170px;
+    right: 100px;
+    background: url(Images/frog.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 550px;
+    border: .5px solid gray;
+    height: 450px;
+}

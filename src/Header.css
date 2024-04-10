@@ -1,0 +1,58 @@
+.header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    transition: all 0.3s;
+    
+}
+.header .logo{
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.header .menu{
+    display: flex;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+.header .menu .menu-item{
+    margin-left: 20px;
+    font-size: 15px;
+    color: #f0f0f0;
+    font-weight:lighter;
+    position: relative;
+    
+}
+
+.header .menu .menu-item::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.25s ease-in;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.header .menu .menu-item:hover::after{
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.header.fixed {
+    position: fixed;
+    background-color: #0000009d;
+    border-bottom: 2px solid rgba(109, 109, 109, 0.447);
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
+   }
